@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom Bullets using ::before</title>
+  <style>
+    ul {
+      list-style: none;       
+      padding: 0;
+    }
+
+    li {
+      font-size: 18px;
+      margin: 8px 0;
+    }
+
+    li::before {
+      content: "* ";        
+      color: green;
+      font-weight: bold;
+    }
+
+    li:hover::before {
+      content: "--> ";      
+      color: blue;
+    }
+  </style>
+</head>
+<body>
+  <h2>ASSIGNMENT QUESTION</h2>
+  <ul>
+    <li>CSS Lab Exercise</li>
+    <li> Pseudo Classes</li>
+    <li>Practical File</li>
+  </ul>
+</body>
+</html>
